@@ -1,69 +1,84 @@
-🌱 EcoScanner AI: Real-Time Waste Classification & Carbon Tracking
-EcoScanner AI is a professional-grade sustainability dashboard that leverages Computer Vision to automate the identification of recyclables and quantify their environmental impact. By integrating deep learning with a secure full-stack architecture, this project provides a scalable solution for monitoring carbon footprints in a circular economy.
+# 🌍 EcoScanner AI: Computer Vision for Resource Recovery
+**Research-Grade AI Platform for Real-Time Waste Classification & Carbon Mitigation**
 
-🏗️ System Architecture & Code Explanation
-The application is built on a modular architecture to ensure separation of concerns, high performance, and security.
+**EcoScanner AI** is a professional-grade research platform that leverages advanced Computer Vision to automate the identification of recyclables and quantify their environmental impact. By integrating deep learning with a secure full-stack architecture, this project provides a scalable solution for monitoring carbon footprints within a circular economy.
 
-1. Library Ecosystem: Why these were chosen
-Your app.py utilizes a specialized stack of Python libraries:
+---
 
-streamlit (st): Chosen for the frontend to create a high-performance, interactive web interface using Python. It handles the Glassmorphism UI and real-time state management.
+## 🏗️ System Architecture
 
-pandas (pd): Used as the primary data manipulation engine for processing user history and generating analytical dataframes for charts.
+### 1. Research-Grade Neural Engine
+The system's core is a fine-tuned **YOLOv8** architecture. It utilizes a specialized inference pipeline optimized for high-speed object localization and material classification.
+* **Model ID**: `YOLOv8s_FineTuned_TACO_v1`
+* **Dataset**: Trained on the **TACO (Trash Annotations in Context)** dataset for superior detection accuracy in diverse lighting conditions.
 
-os & platform: These libraries handle system-level operations, such as checking for the existence of best.pt model weights and displaying system diagnostics like OS version and environment specs.
+### 2. Core Functional Modules
+* **AI Vision Scanner**: Supports dual-interface ingestion via **Live Webcam Feed** or high-resolution **Local File Upload**.
+* **Carbon Mitigation Engine**: Implements a logic-driven mathematical model to calculate **CO2 savings** based on international recycling standards for plastic, metal, and glass.
+* **Impact Portfolio**: Features a robust user authentication system with **Bcrypt hashing** and persistent **SQLite** storage for long-term tracking.
+* **Global Insights**: A real-time **Leaderboard** that aggregates data across all users to visualize community-level sustainability contributions.
 
-cv2 (OpenCV): A powerful computer vision library used here for image array handling and ensuring that pixel data is structured correctly before being passed to the AI.
+---
 
-time & datetime: Vital for measuring Inference Latency (how fast the AI thinks) and timestamping user contributions in the database.
+## 🛠️ Technical Excellence
 
-ultralytics (YOLO): The "brain" of the project. It runs the fine-tuned YOLOv8 model to perform object localization and material classification in milliseconds.
+### ⚡ Neural Inference Optimization
+The inference pipeline is engineered for efficiency and reliability:
+* **RGB Standardization**: Forces 3-channel conversion on all input frames to prevent `RuntimeError` during inference.
+* **Hyperparameter Tuning**: Operates at a **0.4 Confidence Threshold** and **0.5 IOU** to minimize "hallucinations" and false positives.
+* **Resource Caching**: Utilizes `@st.cache_resource` to ensure the model is only loaded once, reducing system overhead during high-frequency scans.
 
-2. Core Functional Modules
-🛡️ Data Persistence (database.py)
-This module provides the secure backbone for the application. It utilizes SQLite for lightweight, local-persistence storage. Key functions include:
+### 📈 Business Intelligence & Analytics
+The dashboard provides deep insights into environmental contribution through automated views:
+* **Personal Metrics**: Automated calculation of Total CO2 Mitigated vs. Items Audited.
+* **Distribution Analytics**: Visualizes material recycling habits using dynamic bar and line charts.
+* **Inference Diagnostics**: Real-time tracking of hardware performance and neural weight integrity.
 
-init_db(): Initializes relational tables for user credentials and historical logs.
+---
 
-bcrypt hashing: Used during user creation to ensure that passwords are never stored in plain text, meeting modern security standards.
+## 🎨 Design Philosophy: Glassmorphism UI
+The interface features a premium **Glassmorphism UI Engine** implemented via custom CSS injection to provide a modern research aesthetic:
+* **Glass Cards**: Semi-transparent containers with `backdrop-filter: blur(20px)` for a sophisticated look.
+* **Dynamic Theme Engine**: Automatically re-injects CSS styles when toggling between **Ultra-Dark** and **Light Mode**.
+* **Micro-Animations**: Custom button transitions and interactive metrics provide a responsive user experience.
 
-get_all_user_stats(): Performs SQL aggregation to generate the global leaderboard.
+---
 
-🧠 Neural Engine (logic.py)
-This layer orchestrates the computer vision pipeline.
+## 📊 Environmental Impact & Use Cases
+* **Urban Waste Management**: Automate the sorting process in high-traffic commercial or residential zones.
+* **Supply Chain Sustainability**: Track the lifecycle of packaging materials and verify carbon credit claims.
+* **SDG Implementation**: Directly supports **UN Sustainable Development Goal 12** by digitizing responsible consumption patterns.
 
-Pre-processing: Forces image conversion to 3-channel RGB, stripping away "Alpha" channels to prevent RuntimeError.
+---
 
-Inference: Executes the YOLOv8 model with an optimized Confidence Threshold (0.4) and IOU (0.5) to ensure accurate detections without "hallucinations".
+## ⚙️ Technical Specifications
+* **DBMS**: SQLite 3.0 (Local-Persistence Engine)
+* **Python Version**: 3.10+
+* **Security**: Bcrypt password encryption (Salt-based hashing)
+* **Performance**: < 5ms object localization on standard CPU hardware
 
-Material Mapping: Maps TACO dataset labels (e.g., 'Bottle') to standard CO2 factors (e.g., 'Plastic') for environmental math.
+---
 
-🎨 Professional UI Design: Glassmorphism
-The interface uses a custom Glassmorphism UI Engine implemented via CSS injection in apply_styles(is_dark).
+## 🚀 Getting Started
+1.  **Clone the Repository**
+    ```bash
+    git clone [https://github.com/Ushan256/EcoScanner-AI.git](https://github.com/Ushan256/EcoScanner-AI.git)
+    ```
+2.  **Install Dependencies**
+    ```bash
+    pip install streamlit pandas ultralytics bcrypt pillow opencv-python-headless
+    ```
+3.  **Launch the Dashboard**
+    ```bash
+    streamlit run app.py
+    ```
+---
 
-Backdrop Filter: Creates a blurred, semi-transparent "glass" look for cards.
+**Developed by:** Ushan
+**Last Updated:** January 2026
 
-Dynamic Theme Engine: Automatically re-injects CSS colors when the user toggles between Ultra-Dark and Light Mode.
+---
 
-Responsive Metrics: Uses Streamlit's st.metric and st.line_chart to show personal CO2 trends dynamically.
-
-📊 Technical Research Points (FCCU Semester Project)
-Distributed Training: The model was fine-tuned on the TACO Dataset using cloud-based GPU acceleration (NVIDIA T4) to ensure high detection accuracy for common recyclables.
-
-SDG Alignment: This project directly supports United Nations SDG 12 (Responsible Consumption) by providing actionable data on waste management.
-
-Low-Latency Performance: Optimized the inference pipeline to achieve localized object detection in under 5ms on standard CPU hardware.
-
-🏁 Installation & Usage
-Environment Setup: Ensure Python 3.10+ is installed.
-
-Install Dependencies:
-
-Bash
-
-pip install streamlit pandas ultralytics bcrypt pillow opencv-python
-Launch Dashboard:
-
-Bash
-
-streamlit run app.py
+1. **Clone the Repository**
+   ```bash
+   git clone [https://github.com/Ushan256/EcoScanner-AI.git](https://github.com/Ushan256/EcoScanner-AI.git)
