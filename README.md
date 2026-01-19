@@ -2,6 +2,7 @@
 **Research-Grade AI Platform for Real-Time Waste Classification & Carbon Mitigation**
 
 **Live Demo:** https://ecoscanner-aigit-fqbbxw2gv8qurqhowr6a3r.streamlit.app/
+
 **EcoScanner AI** is a professional-grade research platform that leverages advanced Computer Vision to automate the identification of recyclables and quantify their environmental impact. By integrating deep learning with a secure full-stack architecture, this project provides a scalable solution for monitoring carbon footprints within a circular economy.
 
 ---
