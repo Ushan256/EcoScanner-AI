@@ -3,9 +3,4 @@ ultralytics
 opencv-python-headless
 pandas
 bcrypt
-pillowsstreamlit
-ultralytics
-opencv-python-headless
-pandas
-bcrypt
 Pillow
