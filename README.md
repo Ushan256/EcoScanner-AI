@@ -121,7 +121,7 @@ The core of EcoScanner AI is a fine-tuned **YOLOv8s** model. Below is the resear
 
 ---
 
-## 🛠️ Installation
+## <a name="installation"></a> 🛠️ Installation
 
 ### Prerequisites
 - **Python 3.10+** (Recommended: 3.11 for deployment)
