@@ -223,7 +223,9 @@ EcoScanner-AI/
 ### 👤 Contact & Support
 - **Developed by**: Ushan
 - **Program**: BS Computer Science
-- **Focus**: Artificial Intelligence & Environmental Informatics
+- **Focus**: Artificial Intelligence, Explainable AI (XAI), Deep Learning Architectures, and Environmental Decision Support Systems (EDSS)
+- **Issues**: Open an issue on GitHub
+- **Documentation**: Check this README for detailed information
   
 ---
 
