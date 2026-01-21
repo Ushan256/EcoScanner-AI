@@ -82,27 +82,28 @@
 ## Architecture
 
 ### System Workflow
+```
 ┌─────────────────────────────────────────────────────────────┐
-│                   Streamlit Dashboard (UI)                   │
-│  • Custom Glassmorphism UI Engine                            │
-│  • User Authentication (Bcrypt)                               │
-│  • Real-Time Visualization (Pandas)                          │
+│                   Streamlit Dashboard (UI)                  │
+│  • Custom Glassmorphism UI Engine                           │
+│  • User Authentication (Bcrypt)                             │
+│  • Real-Time Visualization (Pandas)                         │
 └────────────────────────┬────────────────────────────────────┘
                          │
 ┌────────────────────────▼────────────────────────────────────┐
-│                 AI Neural Engine (logic.py)                  │
-│  • YOLOv8 Inference Pipeline                                 │
-│  • Carbon Mitigation Logic (CO2 Math)                        │
-│  • Image Pre-processing (RGB Normalization)                  │
+│                 AI Neural Engine (logic.py)                 │
+│  • YOLOv8 Inference Pipeline                                │
+│  • Carbon Mitigation Logic (CO2 Math)                       │
+│  • Image Pre-processing (RGB Normalization)                 │
 └────────────────────────┬────────────────────────────────────┘
                          │
 ┌────────────────────────▼────────────────────────────────────┐
-│                Database Layer (database.py)                  │
-│  • SQLite Persistence (eco_scanner.db)                       │
-│  • Secure Audit Logs (History Table)                         │
-│  • Global Leaderboard Aggregator                             │
+│                Database Layer (database.py)                 │
+│  • SQLite Persistence (eco_scanner.db)                      │
+│  • Secure Audit Logs (History Table)                        │
+│  • Global Leaderboard Aggregator                            │
 └─────────────────────────────────────────────────────────────┘
-
+```
 ---
 
 ## 📊 Model Performance Report
