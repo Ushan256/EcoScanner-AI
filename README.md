@@ -11,7 +11,7 @@
 
 **Professional AI-powered research platform for automated waste identification, carbon mitigation logic, and circular economy analytics**
 
-[Features](#features) • [Installation](#installation) • [Usage](#usage) • [Tech Stack](#tech-stack) • [Architecture](#architecture)
+[Features](#features) • [Installation](#-installation) • [Usage](#-usage) • [Tech Stack](#tech-stack) • [Architecture](#architecture)
 
 </div>
 
