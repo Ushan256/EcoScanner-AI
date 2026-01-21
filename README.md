@@ -175,6 +175,7 @@ The application will be available at http://localhost:8501
 --- 
 
 ### 📂 Project Structure
+```
 EcoScanner-AI/
 │
 ├── app.py                   # Main Dashboard UI & Control Logic
@@ -184,7 +185,7 @@ EcoScanner-AI/
 ├── requirements.txt         # Python Dependencies
 ├── packages.txt             # System-level dependencies (Cloud deployment)
 └── README.md                # Project Documentation
-
+```
 ---
 
 ### ⚠️ Limitations & Future Work
@@ -212,9 +213,11 @@ EcoScanner-AI/
 ---
 
 ### 👤 Contact & Support
--**Developed by**: Ushan
--**Program**: BS Computer Science
--**Focus**: Artificial Intelligence & Environmental Informatics
+- **Developed by**: Ushan
+- **Program**: BS Computer Science
+- **Focus**: Artificial Intelligence & Environmental Informatics
+  
+---
 
 <div align="center">
 
