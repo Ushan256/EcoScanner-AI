@@ -178,13 +178,21 @@ The application will be available at http://localhost:8501
 ```
 EcoScanner-AI/
 │
-├── app.py                   # Main Dashboard UI & Control Logic
+├── app.py                   # Main Dashboard UI & Controller logic
 ├── logic.py                 # Neural Engine (YOLOv8) & Carbon Math
-├── database.py              # SQLite Auth & Persistence Layer
-├── best.pt                  # Fine-tuned Model Weights
-├── requirements.txt         # Python Dependencies
-├── packages.txt             # System-level dependencies (Cloud deployment)
-└── README.md                # Project Documentation
+├── auth.py                  # JWT & Identity Management utilities
+├── database.py              # SQLite Schema & Persistence Layer
+├── best.pt                  # Fine-tuned YOLOv8 Model Weights
+├── yolov8s.pt               # Base YOLOv8 small model
+├── eco_scanner.db           # Persistent SQLite Database
+├── requirements.txt         # Python library dependencies
+├── packages.txt             # Linux system dependencies (for Cloud)
+├── README.md                # Project Documentation
+│
+└── eco_scanner_runs/        # Training logs and validation assets
+    └── taco_training/
+        ├── labels.jpg       # Training class distributions
+        └── args.yaml        # Model training hyperparameters
 ```
 ---
 
