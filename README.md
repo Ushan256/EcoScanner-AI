@@ -142,7 +142,7 @@ pip install streamlit pandas ultralytics bcrypt pillow opencv-python-headless
 ```
 Verify Weights Ensure best.pt is present in the root directory. This file contains the fine-tuned neural weights from the TACO dataset training.
 
-### 🚀 Usage
+## 🚀 Usage
 - Starting the Application
 
 ```bash
@@ -223,6 +223,3 @@ Made with ❤️ for advancing environmental AI research
 
 </div>
 
-
-
-### System Workflow
