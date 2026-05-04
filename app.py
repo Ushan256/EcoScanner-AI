@@ -21,12 +21,6 @@ st.set_page_config(
 # 2. INITIALIZATION & CACHING
 # ==========================================
 init_db()
-if 'scan_count' not in st.session_state:
-    st.session_state.scan_count = 0
-if source:
-    st.session_state.scan_count += 1
-    scanner, impact_calc = load_ai_engine()
-btn_key = f"save_{i}_{res['label']}_{st.session_state.scan_count}"
  
 @st.cache_resource
 def load_ai_engine():
