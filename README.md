@@ -4,6 +4,7 @@
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22143224.svg)](https://doi.org/10.5281/zenodo.22143224)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.32+-FF4B4B.svg)
 ![YOLOv8](https://img.shields.io/badge/Model-YOLOv8s-10b981.svg)
 ![SQLite](https://img.shields.io/badge/SQLite-3.0+-yellow.svg)
